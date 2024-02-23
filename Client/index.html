@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>Classy Web App</title>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <main class="container mx-auto p-8 bg-white shadow-lg rounded">
+
+    <div class="mb-8">
+      <label for="name-input" class="font-semibold mb-2">Name:</label>
+      <input type="text" id="name-input" class="border border-gray-300 rounded p-2 focus:border-blue-500 focus:ring-blue-500">
+      <button id="add-name-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Add Name</button>
+    </div>
+
+    <div class="mb-8">
+      <input type="text" id="search-input" placeholder="Search by name" class="border border-gray-300 rounded p-2 focus:border-blue-500 focus:ring-blue-500">
+      <button id="search-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Search</button>
+    </div>
+
+    <table id="table" class="table-auto w-full text-left border-b border-gray-200">
+      <thead>
+        <tr>
+          <th class="px-4 py-2">ID</th>
+          <th class="px-4 py-2">Name</th>
+          <th class="px-4 py-2">Date Added</th>
+          <th class="px-4 py-2">Delete</th>
+          <th class="px-4 py-2">Edit</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <section id="update-row" class="hidden mt-8">
+      <label for="update-name-input" class="font-semibold mb-2">Name:</label>
+      <input type="text" id="update-name-input" class="border border-gray-300 rounded p-2 focus:border-blue-500 focus:ring-blue-500">
+      <button id="update-row-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Update</button>
+    </section>
+    
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
